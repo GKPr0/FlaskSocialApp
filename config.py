@@ -16,3 +16,5 @@ class Config():
     ADMINS = ['vacek.malej@gmail.com']
 
     POSTS_PER_PAGE = 10
+
+    LANGUAGES = ['en', 'cs']

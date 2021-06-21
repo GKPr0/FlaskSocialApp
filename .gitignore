@@ -29,11 +29,15 @@ nosetests.xml
 
 # Translations
 *.mo
+*.pot
 
 # Mr Developer
 .mr.developer.cfg
 .project
 .pydevproject
+
+# VS code
+.vscode
 
 venv
 app.db

@@ -1,0 +1,247 @@
+# Czech translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-06-21 09:41+0200\n"
+"PO-Revision-Date: 2021-06-21 10:04+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: cs\n"
+"Language-Team: cs <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: app/__init__.py:25
+msgid "Please login to access this page."
+msgstr "Pro přístup na tuto stránku se prosím přihlaste."
+
+#: app/email.py:19
+msgid "[Social App] Reset Your Password"
+msgstr "Obnovení hesla"
+
+#: app/forms.py:10 app/forms.py:16 app/forms.py:34
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+#: app/forms.py:11 app/forms.py:18 app/forms.py:53
+msgid "Password"
+msgstr "Heslo"
+
+#: app/forms.py:12
+msgid "Remeber Me"
+msgstr "Zapamatuj si mě."
+
+#: app/forms.py:13 app/templates/login.html:5
+msgid "Sign In"
+msgstr "Přihlásit se"
+
+#: app/forms.py:17 app/forms.py:49
+msgid "Email"
+msgstr "E-mail"
+
+#: app/forms.py:19 app/forms.py:55
+msgid "Repeat Password"
+msgstr "Zopakujete heslo"
+
+#: app/forms.py:20 app/templates/base.html:31 app/templates/register.html:5
+msgid "Register"
+msgstr "Registrace"
+
+#: app/forms.py:25
+msgid "Please use different username."
+msgstr "Použijte jiné uživatelské jméno."
+
+#: app/forms.py:30
+msgid "Please use a different email address"
+msgstr "Použijte jinou e-mailovou adresu"
+
+#: app/forms.py:35
+msgid "About me"
+msgstr "O mně"
+
+#: app/forms.py:36 app/forms.py:59 app/forms.py:64
+msgid "Submit"
+msgstr "Potvrdit"
+
+#: app/forms.py:46
+msgid "Please use a different username."
+msgstr "Použijte jiné uživatelské jméno."
+
+#: app/forms.py:50 app/forms.py:56
+msgid "Request Password Reset"
+msgstr "Požádat o restart hesla"
+
+#: app/forms.py:62
+msgid "Say something"
+msgstr "Řekněte něco"
+
+#: app/routes.py:21
+msgid "Your post is now live!"
+msgstr "Váš příspěvek byl zveřejněn!"
+
+#: app/routes.py:56
+msgid "Invalid username or password"
+msgstr "Neplatné uživateslké jméno nebo heslo"
+
+#: app/routes.py:85
+msgid "Congratulation, you are now a registered user!"
+msgstr "Gratulujeme, nyní jste registrovaným uživatelem!"
+
+#: app/routes.py:114
+msgid "Your changes have been saved."
+msgstr "Vaše změny byly uloženy."
+
+#: app/routes.py:131
+msgid "Check your email for the instructions to reset your password"
+msgstr "Podle pokynů v e-mailu proveďte reset hesla."
+
+#: app/routes.py:147
+msgid "Your password has been reset."
+msgstr "Vaše heslo bylo restartováno."
+
+#: app/routes.py:164 app/routes.py:185
+#, python-format
+msgid "User %(username)s not found."
+msgstr "Uživatel %(username)s nebyl nalezen."
+
+#: app/routes.py:167
+msgid "You cannot follow yourself!"
+msgstr "Nelze sledovat sám sebe!"
+
+#: app/routes.py:172
+#, python-format
+msgid "You are following %(username)s!"
+msgstr "Nyní sledujete uživatele %(username)s!"
+
+#: app/routes.py:188
+msgid "You cannot unfollow yourself!"
+msgstr "Nemůžete přestat sledovat sám sebe!"
+
+#: app/routes.py:193
+#, python-format
+msgid "You are not following %(username)s."
+msgstr "Nesledujete uživatele %(username)s."
+
+#: app/templates/404.html:4
+msgid "File Not Found"
+msgstr "Soubor nebyl nalezen"
+
+#: app/templates/404.html:5 app/templates/500.html:6
+msgid "Back"
+msgstr "Zpět"
+
+#: app/templates/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "Objevila se neočekávaná chyba"
+
+#: app/templates/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "Správce byl upozorněn. Omluváme se za nepříjemnosti!"
+
+#: app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s :"
+msgstr "%(username)s říká %(when)s :"
+
+#: app/templates/base.html:7
+msgid "Welcome to SocialApp"
+msgstr "Vítejte v SocialApp"
+
+#: app/templates/base.html:25
+msgid "Home"
+msgstr "Domů"
+
+#: app/templates/base.html:26
+msgid "Explore"
+msgstr "Prozkoumat"
+
+#: app/templates/base.html:30
+msgid "Login"
+msgstr "Příhlášení"
+
+#: app/templates/base.html:33
+msgid "Profile"
+msgstr "Profil"
+
+#: app/templates/base.html:34
+msgid "Logout"
+msgstr "Odhlášení"
+
+#: app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "Upravit profil"
+
+#: app/templates/index.html:5
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr "Ahoj, %(username)s!"
+
+#: app/templates/index.html:17 app/templates/user.html:44
+msgid "Newer posts"
+msgstr "Novější příspěvky"
+
+#: app/templates/index.html:22 app/templates/user.html:49
+msgid "Older posts"
+msgstr "Starší příspěvky"
+
+#: app/templates/login.html:12
+msgid "New User?"
+msgstr "Nový uživatel?"
+
+#: app/templates/login.html:12
+msgid "Click to Register!"
+msgstr "Kliknutím se zaregistrujte"
+
+#: app/templates/login.html:14
+msgid "Forgot Your Password?"
+msgstr "Zapomněli jste heslo?"
+
+#: app/templates/login.html:15
+msgid "Click to Reset It"
+msgstr "Kliknutím jej resetujete"
+
+#: app/templates/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "Obnovit heslo"
+
+#: app/templates/reset_password_request.html:5
+msgid "Reset Password"
+msgstr ""Obnovit heslo
+
+#: app/templates/user.html:8
+msgid "User"
+msgstr "Uživatel"
+
+#: app/templates/user.html:13
+msgid "Last seen on"
+msgstr "Naposledy spatřen"
+
+#: app/templates/user.html:15
+#, python-format
+msgid "%(count)d followers"
+msgstr "%(count)d sledujících"
+
+#: app/templates/user.html:15
+#, python-format
+msgid "%(count)d following"
+msgstr "%(count)d sledovaných"
+
+#: app/templates/user.html:17
+msgid "Edit your profile"
+msgstr "Upravit profil"
+
+#: app/templates/user.html:22
+msgid "Follow"
+msgstr "Sledovat"
+
+#: app/templates/user.html:29
+msgid "Unfollow"
+msgstr "Přestat sledovat"
+

@@ -1,0 +1,25 @@
+# Generates *.pot file containg all the text marks with _() and _l()
+
+$ pybabel extract -F babel.cfg -k _l -o messages.pot .
+
+-F babel.cfg : File containting configuration
+-k _l : Look also for _l()
+-o messages.pot : Name of the output file
+
+# Crates translation file (*.po) based on *.pot 
+
+$ pybabel init -i messages.pot -d app/translations -l cs
+
+-i message.pot : Source file
+-d app/translations : Output location
+-l cs : Translation language
+
+
+# Compiles translations files (*.mo files)
+
+$ pybabel compile -d app/translations
+
+# Update translation files
+
+$ pybabel extract -F babel.cfg -k _l -o messages.pot .
+$ pybabel update -i messages.pot -d app/translations
