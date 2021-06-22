@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-21 09:41+0200\n"
+"POT-Creation-Date: 2021-06-22 08:14+0200\n"
 "PO-Revision-Date: 2021-06-21 10:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: cs\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/__init__.py:25
+#: app/__init__.py:24
 msgid "Please login to access this page."
 msgstr "Pro přístup na tuto stránku se prosím přihlaste."
 
@@ -82,52 +82,60 @@ msgstr "Požádat o restart hesla"
 msgid "Say something"
 msgstr "Řekněte něco"
 
-#: app/routes.py:21
+#: app/routes.py:26
 msgid "Your post is now live!"
 msgstr "Váš příspěvek byl zveřejněn!"
 
-#: app/routes.py:56
+#: app/routes.py:61
 msgid "Invalid username or password"
 msgstr "Neplatné uživateslké jméno nebo heslo"
 
-#: app/routes.py:85
+#: app/routes.py:90
 msgid "Congratulation, you are now a registered user!"
 msgstr "Gratulujeme, nyní jste registrovaným uživatelem!"
 
-#: app/routes.py:114
+#: app/routes.py:119
 msgid "Your changes have been saved."
 msgstr "Vaše změny byly uloženy."
 
-#: app/routes.py:131
+#: app/routes.py:136
 msgid "Check your email for the instructions to reset your password"
 msgstr "Podle pokynů v e-mailu proveďte reset hesla."
 
-#: app/routes.py:147
+#: app/routes.py:152
 msgid "Your password has been reset."
 msgstr "Vaše heslo bylo restartováno."
 
-#: app/routes.py:164 app/routes.py:185
+#: app/routes.py:170 app/routes.py:191
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Uživatel %(username)s nebyl nalezen."
 
-#: app/routes.py:167
+#: app/routes.py:173
 msgid "You cannot follow yourself!"
 msgstr "Nelze sledovat sám sebe!"
 
-#: app/routes.py:172
+#: app/routes.py:178
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Nyní sledujete uživatele %(username)s!"
 
-#: app/routes.py:188
+#: app/routes.py:194
 msgid "You cannot unfollow yourself!"
 msgstr "Nemůžete přestat sledovat sám sebe!"
 
-#: app/routes.py:193
+#: app/routes.py:199
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Nesledujete uživatele %(username)s."
+
+#: app/translate.py:9
+msgid "Error: the translation service is not configured."
+msgstr "Chyba: Překladatelská služba není nastavena."
+
+#: app/translate.py:18
+msgid "Error: the translation service failed."
+msgstr "Chyba: Překladatelská služba selhala."
 
 #: app/templates/404.html:4
 msgid "File Not Found"
@@ -149,6 +157,10 @@ msgstr "Správce byl upozorněn. Omluváme se za nepříjemnosti!"
 #, python-format
 msgid "%(username)s said %(when)s :"
 msgstr "%(username)s říká %(when)s :"
+
+#: app/templates/_post.html:24
+msgid "Translate"
+msgstr "Přeložit"
 
 #: app/templates/base.html:7
 msgid "Welcome to SocialApp"
@@ -173,6 +185,10 @@ msgstr "Profil"
 #: app/templates/base.html:34
 msgid "Logout"
 msgstr "Odhlášení"
+
+#: app/templates/base.html:71
+msgid "Error: Could not contact server."
+msgstr "Chyba: Nepodařilo se navázat spojení se serverem"
 
 #: app/templates/edit_profile.html:5
 msgid "Edit Profile"
@@ -213,7 +229,7 @@ msgstr "Obnovit heslo"
 
 #: app/templates/reset_password_request.html:5
 msgid "Reset Password"
-msgstr ""Obnovit heslo
+msgstr "Obnovit heslo"
 
 #: app/templates/user.html:8
 msgid "User"

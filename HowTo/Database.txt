@@ -1,0 +1,9 @@
+# Migrates new changes in models
+
+$ flask db migrate -m "add language to posts"
+
+-m : Name of the migration
+
+# Upgrade database (apply new migration)
+
+$ flask db upgrade
