@@ -1,0 +1,5 @@
+# Generate requirements.txt containgin only local (venv) packages
+$ pip freeze --local > requirements.txt
+
+# Install all packages from requirements.txt
+$ pip install -r requirements.txt
