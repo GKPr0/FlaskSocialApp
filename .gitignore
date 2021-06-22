@@ -39,6 +39,10 @@ nosetests.xml
 # VS code
 .vscode
 
+# Enviroment var
+.env
+
+
 venv
 app.db
 *.log*

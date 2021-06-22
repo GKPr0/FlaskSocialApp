@@ -1,0 +1,7 @@
+# Config uses enviroment variables which can be created from .env file
+# .env file contains:
+
+MAIL_SERVER=localhost
+MAIL_PORT=8025
+SECRET_KEY='yours_super_long_safe_key'
+MS_TRANSLATOR_KEY='Azure_translator_key'
