@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-24 12:12+0200\n"
+"POT-Creation-Date: 2021-06-24 14:37+0200\n"
 "PO-Revision-Date: 2021-06-21 10:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: cs\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/__init__.py:22
+#: app/__init__.py:24
 msgid "Please login to access this page."
 msgstr "Pro přístup na tuto stránku se prosím přihlaste."
 
@@ -164,14 +164,22 @@ msgstr "Nemůžete přestat sledovat sám sebe!"
 msgid "You are not following %(username)s."
 msgstr "Nesledujete uživatele %(username)s."
 
-#: app/main/routes.py:172
+#: app/main/routes.py:173
 #, fuzzy
 msgid "Your message has been sent."
 msgstr "Vaše heslo bylo restartováno."
 
-#: app/main/routes.py:174
+#: app/main/routes.py:175
 msgid "Send Message"
-msgstr Odeslat zprávu""
+msgstr "Odeslat zprávu""
+
+#: app/main/routes.py:211
+msgid "An export task is currently in progress"
+msgstr "Přípěvky jsou exportovány"
+
+#: app/main/routes.py:213
+msgid "Exporting posts..."
+msgstr "Exportování příspěvků..."
 
 #: app/templates/_post.html:16
 #, python-format
@@ -194,15 +202,15 @@ msgstr "Příhlášení"
 msgid "Profile"
 msgstr "Profil"
 
-#: app/templates/base.html:43 app/templates/messages.html:4
+#: app/templates/base.html:44 app/templates/messages.html:4
 msgid "Messages"
 msgstr "Zprávy"
 
-#: app/templates/base.html:44
+#: app/templates/base.html:52
 msgid "Logout"
 msgstr "Odhlášení"
 
-#: app/templates/base.html:127
+#: app/templates/base.html:174
 msgid "Error: Could not contact server."
 msgstr "Chyba: Nepodařilo se navázat spojení se serverem"
 
@@ -211,11 +219,11 @@ msgstr "Chyba: Nepodařilo se navázat spojení se serverem"
 msgid "Hi, %(username)s!"
 msgstr "Ahoj, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:54
+#: app/templates/index.html:17 app/templates/user.html:59
 msgid "Newer posts"
 msgstr "Novější příspěvky"
 
-#: app/templates/index.html:22 app/templates/user.html:59
+#: app/templates/index.html:22 app/templates/user.html:64
 msgid "Older posts"
 msgstr "Starší příspěvky"
 
@@ -266,15 +274,19 @@ msgstr "%(count)d sledovaných"
 msgid "Edit your profile"
 msgstr "Upravit profil"
 
-#: app/templates/user.html:25 app/templates/user_popup.html:22
+#: app/templates/user.html:23
+msgid "Export your posts"
+msgstr "Exportovat příspěvky"
+
+#: app/templates/user.html:30 app/templates/user_popup.html:22
 msgid "Follow"
 msgstr "Sledovat"
 
-#: app/templates/user.html:32 app/templates/user_popup.html:29
+#: app/templates/user.html:37 app/templates/user_popup.html:29
 msgid "Unfollow"
 msgstr "Přestat sledovat"
 
-#: app/templates/user.html:39
+#: app/templates/user.html:44
 msgid "Send private message"
 msgstr "Odeslat soukromou zprávu"
 
