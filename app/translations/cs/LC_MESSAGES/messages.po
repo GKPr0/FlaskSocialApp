@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-24 09:48+0200\n"
+"POT-Creation-Date: 2021-06-24 10:58+0200\n"
 "PO-Revision-Date: 2021-06-21 10:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: cs\n"
@@ -128,43 +128,43 @@ msgstr "Domů"
 msgid "Explore"
 msgstr "Prozkoumat"
 
-#: app/main/routes.py:100
+#: app/main/routes.py:107
 msgid "Your changes have been saved."
 msgstr "Vaše změny byly uloženy."
 
-#: app/main/routes.py:106 app/templates/edit_profile.html:5
+#: app/main/routes.py:113 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Upravit profil"
 
-#: app/main/routes.py:115 app/main/routes.py:136
+#: app/main/routes.py:122 app/main/routes.py:143
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Uživatel %(username)s nebyl nalezen."
 
-#: app/main/routes.py:118
+#: app/main/routes.py:125
 msgid "You cannot follow yourself!"
 msgstr "Nelze sledovat sám sebe!"
 
-#: app/main/routes.py:123
+#: app/main/routes.py:130
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Nyní sledujete uživatele %(username)s!"
 
-#: app/main/routes.py:139
+#: app/main/routes.py:146
 msgid "You cannot unfollow yourself!"
 msgstr "Nemůžete přestat sledovat sám sebe!"
 
-#: app/main/routes.py:144
+#: app/main/routes.py:151
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Nesledujete uživatele %(username)s."
 
-#: app/templates/_post.html:14
+#: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s :"
 msgstr "%(username)s říká %(when)s :"
 
-#: app/templates/_post.html:24
+#: app/templates/_post.html:26
 msgid "Translate"
 msgstr "Přeložit"
 
@@ -184,7 +184,7 @@ msgstr "Profil"
 msgid "Logout"
 msgstr "Odhlášení"
 
-#: app/templates/base.html:80
+#: app/templates/base.html:126
 msgid "Error: Could not contact server."
 msgstr "Chyba: Nepodařilo se navázat spojení se serverem"
 
@@ -193,11 +193,11 @@ msgstr "Chyba: Nepodařilo se navázat spojení se serverem"
 msgid "Hi, %(username)s!"
 msgstr "Ahoj, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:44
+#: app/templates/index.html:17 app/templates/user.html:47
 msgid "Newer posts"
 msgstr "Novější příspěvky"
 
-#: app/templates/index.html:22 app/templates/user.html:49
+#: app/templates/index.html:22 app/templates/user.html:52
 msgid "Older posts"
 msgstr "Starší příspěvky"
 
@@ -217,29 +217,29 @@ msgstr "Další výsledky"
 msgid "User"
 msgstr "Uživatel"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:11
 msgid "Last seen on"
 msgstr "Naposledy spatřen"
 
-#: app/templates/user.html:15
+#: app/templates/user.html:16 app/templates/user_popup.html:14
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d sledujících"
 
-#: app/templates/user.html:15
+#: app/templates/user.html:17 app/templates/user_popup.html:15
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d sledovaných"
 
-#: app/templates/user.html:17
+#: app/templates/user.html:20
 msgid "Edit your profile"
 msgstr "Upravit profil"
 
-#: app/templates/user.html:22
+#: app/templates/user.html:25 app/templates/user_popup.html:22
 msgid "Follow"
 msgstr "Sledovat"
 
-#: app/templates/user.html:29
+#: app/templates/user.html:32 app/templates/user_popup.html:29
 msgid "Unfollow"
 msgstr "Přestat sledovat"
 
