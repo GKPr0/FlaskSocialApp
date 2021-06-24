@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-22 08:14+0200\n"
+"POT-Creation-Date: 2021-06-24 09:48+0200\n"
 "PO-Revision-Date: 2021-06-21 10:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: cs\n"
@@ -18,140 +18,146 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/__init__.py:24
+#: app/__init__.py:22
 msgid "Please login to access this page."
 msgstr "Pro přístup na tuto stránku se prosím přihlaste."
 
-#: app/email.py:19
+#: app/translate.py:8
+msgid "Error: the translation service is not configured."
+msgstr "Chyba: Překladatelská služba není nastavena."
+
+#: app/translate.py:17
+msgid "Error: the translation service failed."
+msgstr "Chyba: Překladatelská služba selhala."
+
+#: app/auth/email.py:8
 msgid "[Social App] Reset Your Password"
 msgstr "Obnovení hesla"
 
-#: app/forms.py:10 app/forms.py:16 app/forms.py:34
+#: app/auth/forms.py:9 app/auth/forms.py:15 app/main/forms.py:10
 msgid "Username"
 msgstr "Uživatelské jméno"
 
-#: app/forms.py:11 app/forms.py:18 app/forms.py:53
+#: app/auth/forms.py:10 app/auth/forms.py:17 app/auth/forms.py:36
 msgid "Password"
 msgstr "Heslo"
 
-#: app/forms.py:12
+#: app/auth/forms.py:11
 msgid "Remeber Me"
 msgstr "Zapamatuj si mě."
 
-#: app/forms.py:13 app/templates/login.html:5
+#: app/auth/forms.py:12 app/auth/routes.py:33 app/templates/auth/login.html:5
 msgid "Sign In"
 msgstr "Přihlásit se"
 
-#: app/forms.py:17 app/forms.py:49
+#: app/auth/forms.py:16 app/auth/forms.py:32
 msgid "Email"
 msgstr "E-mail"
 
-#: app/forms.py:19 app/forms.py:55
+#: app/auth/forms.py:18 app/auth/forms.py:38
 msgid "Repeat Password"
 msgstr "Zopakujete heslo"
 
-#: app/forms.py:20 app/templates/base.html:31 app/templates/register.html:5
+#: app/auth/forms.py:19 app/auth/routes.py:54
+#: app/templates/auth/register.html:5 app/templates/base.html:40
 msgid "Register"
 msgstr "Registrace"
 
-#: app/forms.py:25
+#: app/auth/forms.py:24
 msgid "Please use different username."
 msgstr "Použijte jiné uživatelské jméno."
 
-#: app/forms.py:30
+#: app/auth/forms.py:29
 msgid "Please use a different email address"
 msgstr "Použijte jinou e-mailovou adresu"
 
-#: app/forms.py:35
-msgid "About me"
-msgstr "O mně"
-
-#: app/forms.py:36 app/forms.py:59 app/forms.py:64
-msgid "Submit"
-msgstr "Potvrdit"
-
-#: app/forms.py:46
-msgid "Please use a different username."
-msgstr "Použijte jiné uživatelské jméno."
-
-#: app/forms.py:50 app/forms.py:56
+#: app/auth/forms.py:33 app/auth/forms.py:39
 msgid "Request Password Reset"
 msgstr "Požádat o restart hesla"
 
-#: app/forms.py:62
-msgid "Say something"
-msgstr "Řekněte něco"
-
-#: app/routes.py:26
-msgid "Your post is now live!"
-msgstr "Váš příspěvek byl zveřejněn!"
-
-#: app/routes.py:61
+#: app/auth/routes.py:22
 msgid "Invalid username or password"
 msgstr "Neplatné uživateslké jméno nebo heslo"
 
-#: app/routes.py:90
+#: app/auth/routes.py:51
 msgid "Congratulation, you are now a registered user!"
 msgstr "Gratulujeme, nyní jste registrovaným uživatelem!"
 
-#: app/routes.py:119
-msgid "Your changes have been saved."
-msgstr "Vaše změny byly uloženy."
-
-#: app/routes.py:136
+#: app/auth/routes.py:65
 msgid "Check your email for the instructions to reset your password"
 msgstr "Podle pokynů v e-mailu proveďte reset hesla."
 
-#: app/routes.py:152
+#: app/auth/routes.py:68 app/templates/auth/reset_password_request.html:5
+msgid "Reset Password"
+msgstr "Obnovit heslo"
+
+#: app/auth/routes.py:81
 msgid "Your password has been reset."
 msgstr "Vaše heslo bylo restartováno."
 
-#: app/routes.py:170 app/routes.py:191
+#: app/main/forms.py:11
+msgid "About me"
+msgstr "O mně"
+
+#: app/main/forms.py:12 app/main/forms.py:25 app/main/forms.py:30
+msgid "Submit"
+msgstr "Potvrdit"
+
+#: app/main/forms.py:22
+msgid "Please use a different username."
+msgstr "Použijte jiné uživatelské jméno."
+
+#: app/main/forms.py:28
+msgid "Say something"
+msgstr "Řekněte něco"
+
+#: app/main/forms.py:33 app/main/routes.py:35
+#, fuzzy
+msgid "Search"
+msgstr "Uživatel"
+
+#: app/main/routes.py:50
+msgid "Your post is now live!"
+msgstr "Váš příspěvek byl zveřejněn!"
+
+#: app/main/routes.py:60 app/templates/base.html:25
+msgid "Home"
+msgstr "Domů"
+
+#: app/main/routes.py:73 app/templates/base.html:26
+msgid "Explore"
+msgstr "Prozkoumat"
+
+#: app/main/routes.py:100
+msgid "Your changes have been saved."
+msgstr "Vaše změny byly uloženy."
+
+#: app/main/routes.py:106 app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "Upravit profil"
+
+#: app/main/routes.py:115 app/main/routes.py:136
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Uživatel %(username)s nebyl nalezen."
 
-#: app/routes.py:173
+#: app/main/routes.py:118
 msgid "You cannot follow yourself!"
 msgstr "Nelze sledovat sám sebe!"
 
-#: app/routes.py:178
+#: app/main/routes.py:123
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Nyní sledujete uživatele %(username)s!"
 
-#: app/routes.py:194
+#: app/main/routes.py:139
 msgid "You cannot unfollow yourself!"
 msgstr "Nemůžete přestat sledovat sám sebe!"
 
-#: app/routes.py:199
+#: app/main/routes.py:144
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Nesledujete uživatele %(username)s."
-
-#: app/translate.py:9
-msgid "Error: the translation service is not configured."
-msgstr "Chyba: Překladatelská služba není nastavena."
-
-#: app/translate.py:18
-msgid "Error: the translation service failed."
-msgstr "Chyba: Překladatelská služba selhala."
-
-#: app/templates/404.html:4
-msgid "File Not Found"
-msgstr "Soubor nebyl nalezen"
-
-#: app/templates/404.html:5 app/templates/500.html:6
-msgid "Back"
-msgstr "Zpět"
-
-#: app/templates/500.html:4
-msgid "An unexpected error has occurred"
-msgstr "Objevila se neočekávaná chyba"
-
-#: app/templates/500.html:5
-msgid "The administrator has been notified. Sorry for the inconvenience!"
-msgstr "Správce byl upozorněn. Omluváme se za nepříjemnosti!"
 
 #: app/templates/_post.html:14
 #, python-format
@@ -166,33 +172,21 @@ msgstr "Přeložit"
 msgid "Welcome to SocialApp"
 msgstr "Vítejte v SocialApp"
 
-#: app/templates/base.html:25
-msgid "Home"
-msgstr "Domů"
-
-#: app/templates/base.html:26
-msgid "Explore"
-msgstr "Prozkoumat"
-
-#: app/templates/base.html:30
+#: app/templates/base.html:39
 msgid "Login"
 msgstr "Příhlášení"
 
-#: app/templates/base.html:33
+#: app/templates/base.html:42
 msgid "Profile"
 msgstr "Profil"
 
-#: app/templates/base.html:34
+#: app/templates/base.html:43
 msgid "Logout"
 msgstr "Odhlášení"
 
-#: app/templates/base.html:71
+#: app/templates/base.html:80
 msgid "Error: Could not contact server."
 msgstr "Chyba: Nepodařilo se navázat spojení se serverem"
-
-#: app/templates/edit_profile.html:5
-msgid "Edit Profile"
-msgstr "Upravit profil"
 
 #: app/templates/index.html:5
 #, python-format
@@ -207,29 +201,17 @@ msgstr "Novější příspěvky"
 msgid "Older posts"
 msgstr "Starší příspěvky"
 
-#: app/templates/login.html:12
-msgid "New User?"
-msgstr "Nový uživatel?"
+#: app/templates/search.html:4
+msgid "Search Results"
+msgstr "Výsledky hledání"
 
-#: app/templates/login.html:12
-msgid "Click to Register!"
-msgstr "Kliknutím se zaregistrujte"
+#: app/templates/search.html:13
+msgid "Previous results"
+msgstr "Předchozí výsledky"
 
-#: app/templates/login.html:14
-msgid "Forgot Your Password?"
-msgstr "Zapomněli jste heslo?"
-
-#: app/templates/login.html:15
-msgid "Click to Reset It"
-msgstr "Kliknutím jej resetujete"
-
-#: app/templates/reset_password.html:5
-msgid "Reset Your Password"
-msgstr "Obnovit heslo"
-
-#: app/templates/reset_password_request.html:5
-msgid "Reset Password"
-msgstr "Obnovit heslo"
+#: app/templates/search.html:18
+msgid "Next results"
+msgstr "Další výsledky"
 
 #: app/templates/user.html:8
 msgid "User"
@@ -260,4 +242,40 @@ msgstr "Sledovat"
 #: app/templates/user.html:29
 msgid "Unfollow"
 msgstr "Přestat sledovat"
+
+#: app/templates/auth/login.html:12
+msgid "New User?"
+msgstr "Nový uživatel?"
+
+#: app/templates/auth/login.html:12
+msgid "Click to Register!"
+msgstr "Kliknutím se zaregistrujte"
+
+#: app/templates/auth/login.html:14
+msgid "Forgot Your Password?"
+msgstr "Zapomněli jste heslo?"
+
+#: app/templates/auth/login.html:15
+msgid "Click to Reset It"
+msgstr "Kliknutím jej resetujete"
+
+#: app/templates/auth/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "Obnovit heslo"
+
+#: app/templates/errors/404.html:4
+msgid "File Not Found"
+msgstr "Soubor nebyl nalezen"
+
+#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
+msgid "Back"
+msgstr "Zpět"
+
+#: app/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "Objevila se neočekávaná chyba"
+
+#: app/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "Správce byl upozorněn. Omluváme se za nepříjemnosti!"
 
