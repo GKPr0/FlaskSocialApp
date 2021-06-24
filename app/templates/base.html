@@ -40,6 +40,7 @@
                 <li><a href="{{ url_for('auth.register') }}">{{ _('Register') }}</a></li>
                 {% else %}
                 <li><a href="{{ url_for('main.user', username=current_user.username) }}">{{ _('Profile') }}</a></li>
+                <li><a href="{{ url_for('main.messages') }}">{{ _('Messages') }}</a></li>
                 <li><a href="{{ url_for('auth.logout') }}">{{ _('Logout') }}</a></li>
                 {% endif %}
             </ul>

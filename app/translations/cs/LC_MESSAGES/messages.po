@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-24 10:58+0200\n"
+"POT-Creation-Date: 2021-06-24 12:12+0200\n"
 "PO-Revision-Date: 2021-06-21 10:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: cs\n"
@@ -100,6 +100,7 @@ msgid "About me"
 msgstr "O mně"
 
 #: app/main/forms.py:12 app/main/forms.py:25 app/main/forms.py:30
+#: app/main/forms.py:45
 msgid "Submit"
 msgstr "Potvrdit"
 
@@ -115,6 +116,10 @@ msgstr "Řekněte něco"
 #, fuzzy
 msgid "Search"
 msgstr "Uživatel"
+
+#: app/main/forms.py:43
+msgid "Message"
+msgstr "Zpráva"
 
 #: app/main/routes.py:50
 msgid "Your post is now live!"
@@ -159,6 +164,15 @@ msgstr "Nemůžete přestat sledovat sám sebe!"
 msgid "You are not following %(username)s."
 msgstr "Nesledujete uživatele %(username)s."
 
+#: app/main/routes.py:172
+#, fuzzy
+msgid "Your message has been sent."
+msgstr "Vaše heslo bylo restartováno."
+
+#: app/main/routes.py:174
+msgid "Send Message"
+msgstr Odeslat zprávu""
+
 #: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s :"
@@ -180,11 +194,15 @@ msgstr "Příhlášení"
 msgid "Profile"
 msgstr "Profil"
 
-#: app/templates/base.html:43
+#: app/templates/base.html:43 app/templates/messages.html:4
+msgid "Messages"
+msgstr "Zprávy"
+
+#: app/templates/base.html:44
 msgid "Logout"
 msgstr "Odhlášení"
 
-#: app/templates/base.html:126
+#: app/templates/base.html:127
 msgid "Error: Could not contact server."
 msgstr "Chyba: Nepodařilo se navázat spojení se serverem"
 
@@ -193,13 +211,21 @@ msgstr "Chyba: Nepodařilo se navázat spojení se serverem"
 msgid "Hi, %(username)s!"
 msgstr "Ahoj, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:47
+#: app/templates/index.html:17 app/templates/user.html:54
 msgid "Newer posts"
 msgstr "Novější příspěvky"
 
-#: app/templates/index.html:22 app/templates/user.html:52
+#: app/templates/index.html:22 app/templates/user.html:59
 msgid "Older posts"
 msgstr "Starší příspěvky"
+
+#: app/templates/messages.html:12
+msgid "Newer messages"
+msgstr "Novější zprávy"
+
+#: app/templates/messages.html:17
+msgid "Older messages"
+msgstr "Starší zprávy"
 
 #: app/templates/search.html:4
 msgid "Search Results"
@@ -212,6 +238,11 @@ msgstr "Předchozí výsledky"
 #: app/templates/search.html:18
 msgid "Next results"
 msgstr "Další výsledky"
+
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr "Odelsat zprávu uživateli %(recipient)s"
 
 #: app/templates/user.html:8
 msgid "User"
@@ -242,6 +273,10 @@ msgstr "Sledovat"
 #: app/templates/user.html:32 app/templates/user_popup.html:29
 msgid "Unfollow"
 msgstr "Přestat sledovat"
+
+#: app/templates/user.html:39
+msgid "Send private message"
+msgstr "Odeslat soukromou zprávu"
 
 #: app/templates/auth/login.html:12
 msgid "New User?"
